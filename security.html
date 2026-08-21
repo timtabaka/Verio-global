@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Security, Privacy & Trust | Verio</title>
+  <meta name="description" content="Learn how Verio approaches security, privacy, applicant control, compliance and responsible technology.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://www.verio.global/security.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@500,700,900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --deep-ink: #0A0F1C;
+      --verio-blue: #2563EB;
+      --verio-blue-hover: #1D4ED8;
+      --light-blue: #E7F0FE;
+      --surface: #F8FAFC;
+      --slate: #374151;
+      --slate-2: #6B7280;
+      --white: #FFFFFF;
+      --border: #E5E7EB;
+      --font-display: 'Satoshi', 'Inter', -apple-system, system-ui, sans-serif;
+      --font-body: 'Inter', -apple-system, system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--white);
+      color: var(--deep-ink);
+      font-size: 15px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255,255,255,.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .nav-logo {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 24px;
+      letter-spacing: -0.03em;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .back-link {
+      color: var(--slate);
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .back-link:hover { color: var(--deep-ink); }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: var(--verio-blue);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .nav-cta:hover { background: var(--verio-blue-hover); }
+
+    .hero {
+      padding: 96px 0 64px;
+      background:
+        radial-gradient(circle at top right, rgba(37,99,235,.10), transparent 34%),
+        var(--white);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 14px;
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: var(--verio-blue);
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-size: clamp(42px, 6vw, 68px);
+      line-height: 1;
+      letter-spacing: -0.04em;
+      margin-bottom: 18px;
+    }
+
+    .hero-sub {
+      max-width: 760px;
+      font-size: 18px;
+      color: var(--slate);
+    }
+
+    .content-wrap {
+      display: grid;
+      grid-template-columns: 240px minmax(0, 1fr);
+      gap: 64px;
+      padding: 72px 0 96px;
+    }
+
+    .toc {
+      position: sticky;
+      top: 104px;
+      align-self: start;
+    }
+
+    .toc-title {
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      margin-bottom: 14px;
+      color: var(--slate-2);
+    }
+
+    .toc a {
+      display: block;
+      padding: 7px 0;
+      font-size: 13px;
+      color: var(--slate-2);
+    }
+
+    .toc a:hover { color: var(--verio-blue); }
+
+    .content {
+      max-width: 760px;
+    }
+
+    .content section {
+      scroll-margin-top: 100px;
+      padding: 0 0 42px;
+      margin-bottom: 42px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .content section:last-child {
+      border-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    .content h2 {
+      font-family: var(--font-display);
+      font-size: 25px;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 14px;
+    }
+
+    .content p {
+      color: var(--slate);
+      margin-bottom: 14px;
+    }
+
+    .content ul {
+      margin: 14px 0 0 20px;
+      color: var(--slate);
+    }
+
+    .content li { margin: 7px 0; }
+
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      margin-top: 18px;
+    }
+
+    .contact-card strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .contact-card a {
+      color: var(--verio-blue);
+      font-weight: 600;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 36px 0;
+      color: var(--slate-2);
+      font-size: 13px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a:hover { color: var(--deep-ink); }
+
+    @media (max-width: 840px) {
+      .content-wrap { grid-template-columns: 1fr; gap: 36px; }
+      .toc { position: static; }
+      .toc-links {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        gap: 0 16px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 0 20px; }
+      .nav-actions .back-link { display: none; }
+      .hero { padding: 72px 0 48px; }
+      .content-wrap { padding: 52px 0 72px; }
+      .toc-links { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="nav-logo" href="/">verio</a>
+      <div class="nav-actions">
+        <a class="back-link" href="/">Back to website</a>
+        <a class="nav-cta" href="mailto:contact@verio.global?subject=Verio%20demo%20request">Request a Demo</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <div class="eyebrow">Security, Privacy & Trust</div>
+      <h1>Built for Trust</h1>
+      <p class="hero-sub">Trust is at the heart of everything we do. Verio is designed to help education providers verify financial capacity using consent-based, bank-verified financial data while maintaining strong security, privacy and responsible data handling principles.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="content-wrap">
+      <aside class="toc" aria-label="Security, Privacy and Trust sections">
+        <div class="toc-title">On this page</div>
+        <div class="toc-links">
+          <a href="#trust">Built for Trust</a>
+          <a href="#privacy">Privacy by Design</a>
+          <a href="#security">Security by Design</a>
+          <a href="#control">Applicant Control</a>
+          <a href="#compliance">Compliance</a>
+          <a href="#technology">Responsible Technology</a>
+          <a href="#improvement">Continuous Improvement</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+      </aside>
+
+      <article class="content">
+        <section id="trust">
+          <h2>Built for Trust</h2>
+          <p>Trust is at the heart of everything we do.</p>
+          <p>Verio helps education providers verify an applicant’s financial capacity using consent-based, bank-verified financial data. Our platform is designed to reduce fraud, improve consistency and provide institutions with greater confidence in every verification outcome.</p>
+          <p>Security, privacy and responsible data handling are fundamental to how we build our platform and work with our partners.</p>
+        </section>
+
+        <section id="privacy">
+          <h2>Privacy by Design</h2>
+          <p>Verio is built on privacy-first principles that put applicants in control of their information.</p>
+          <p>We are committed to:</p>
+          <ul>
+            <li>Obtaining explicit consent before any financial information is accessed.</li>
+            <li>Collecting only the information necessary to complete a verification.</li>
+            <li>Using data solely for the authorised verification purpose.</li>
+            <li>Maintaining clear audit trails throughout the verification process.</li>
+            <li>Restricting access to authorised personnel through role-based permissions.</li>
+          </ul>
+        </section>
+
+        <section id="security">
+          <h2>Security by Design</h2>
+          <p>Protecting sensitive financial information is central to our platform.</p>
+          <p>Our security approach includes:</p>
+          <ul>
+            <li>Encryption of data in transit and at rest.</li>
+            <li>Secure authentication and access controls.</li>
+            <li>Comprehensive activity logging and monitoring.</li>
+            <li>Secure cloud infrastructure following recognised industry best practices.</li>
+            <li>Ongoing security reviews as our platform continues to evolve.</li>
+          </ul>
+          <p>Security is embedded into the design of Verio and will continue to develop as we expand internationally.</p>
+        </section>
+
+        <section id="control">
+          <h2>Applicant Control</h2>
+          <p>Applicants remain in control of their financial information throughout the verification process.</p>
+          <p>Where supported by local financial infrastructure and regulatory frameworks:</p>
+          <ul>
+            <li>Financial data is accessed only after explicit consent.</li>
+            <li>Information is retrieved directly from authorised financial institutions or regulated data-sharing networks.</li>
+            <li>Education providers receive only the verification outcome and information required to support their assessment, rather than unnecessary underlying financial data.</li>
+          </ul>
+        </section>
+
+        <section id="compliance">
+          <h2>Compliance</h2>
+          <p>Verio is designed to support applicable privacy, financial data and regulatory requirements in each market where we operate.</p>
+          <p>As we expand internationally, we will continue to strengthen our governance, security and compliance framework in partnership with regulated financial data providers and trusted technology partners.</p>
+        </section>
+
+        <section id="technology">
+          <h2>Responsible Technology</h2>
+          <p>Technology should improve trust, not replace it.</p>
+          <p>Where automation supports the verification process, it is designed to improve efficiency, consistency and accuracy while maintaining transparency and appropriate human oversight where required.</p>
+        </section>
+
+        <section id="improvement">
+          <h2>Continuous Improvement</h2>
+          <p>Security and privacy are ongoing commitments.</p>
+          <p>We continually review our platform, policies and operational controls to strengthen protection, respond to emerging risks and meet the evolving expectations of education providers, applicants and regulatory partners.</p>
+        </section>
+
+        <section id="contact">
+          <h2>Contact Us</h2>
+          <p>If you have questions about our security, privacy or compliance approach, we’d be pleased to discuss your requirements.</p>
+          <div class="contact-card">
+            <strong>Verio</strong>
+            <p>Email: <a href="mailto:contact@verio.global">contact@verio.global</a></p>
+            <p>Website: <a href="https://www.verio.global/">www.verio.global</a></p>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© 2026 Verio Global. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/security.html">Security, Privacy &amp; Trust</a>
+        <a href="/terms.html">Terms of Use</a>
+        <a href="/">Back to website</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
