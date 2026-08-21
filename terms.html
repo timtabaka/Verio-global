@@ -27,8 +27,18 @@
       --font-display: 'Satoshi', 'Inter', -apple-system, system-ui, sans-serif;
       --font-body: 'Inter', -apple-system, system-ui, sans-serif;
     }
+.nav .container {
+  max-width: none;
+  padding-left: 46px;
+  padding-right: 46px;
+}
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+@media (max-width: 600px) {
+  .nav .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     html { scroll-behavior: smooth; }
 
