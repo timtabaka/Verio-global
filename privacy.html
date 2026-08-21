@@ -19,7 +19,18 @@
     .content-wrap{display:grid;grid-template-columns:240px minmax(0,1fr);gap:64px;padding:72px 0 96px}.toc{position:sticky;top:104px;align-self:start}.toc-title{font-family:var(--font-display);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:14px;color:var(--slate-2)}.toc a{display:block;padding:7px 0;font-size:13px;color:var(--slate-2)}.toc a:hover{color:var(--verio-blue)}.policy{max-width:760px}.policy section{scroll-margin-top:100px;padding:0 0 42px;margin-bottom:42px;border-bottom:1px solid var(--border)}.policy section:last-child{border-bottom:0;margin-bottom:0}.policy h2{font-family:var(--font-display);font-size:25px;line-height:1.2;letter-spacing:-.02em;margin-bottom:14px}.policy p{color:var(--slate);margin-bottom:14px}.policy ul{margin:14px 0 0 20px;color:var(--slate)}.policy li{margin:7px 0}.contact-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;margin-top:18px}.contact-card strong{display:block;font-family:var(--font-display);font-size:18px;margin-bottom:8px}.contact-card a{color:var(--verio-blue);font-weight:600}
     footer{border-top:1px solid var(--border);padding:36px 0;color:var(--slate-2);font-size:13px}.footer-inner{display:flex;justify-content:space-between;gap:24px;align-items:center;flex-wrap:wrap}.footer-links{display:flex;gap:20px;flex-wrap:wrap}.footer-links a:hover{color:var(--deep-ink)}
     @media(max-width:840px){.content-wrap{grid-template-columns:1fr;gap:36px}.toc{position:static}.toc-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 16px}}@media(max-width:600px){.container{padding:0 20px}.nav-actions .back-link{display:none}.hero{padding:72px 0 48px}.content-wrap{padding:52px 0 72px}.toc-links{grid-template-columns:1fr}}
-  </style>
+  .nav .container {
+  max-width: none;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+@media (max-width: 600px) {
+  .nav .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}  </style>
 </head>
 <body>
   <nav class="nav"><div class="container nav-inner"><a class="nav-logo" href="/">verio</a><div class="nav-actions"><a class="back-link" href="/">Back to website</a><a class="nav-cta" href="mailto:contact@verio.global?subject=Verio%20demo%20request">Request a Demo</a></div></div></nav>
