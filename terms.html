@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Terms of Use | Verio</title>
+  <meta name="description" content="Verio Terms of Use governing access to and use of Verio websites, platform, applications and financial verification services.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://www.verio.global/terms.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@500,700,900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --deep-ink: #0A0F1C;
+      --verio-blue: #2563EB;
+      --verio-blue-hover: #1D4ED8;
+      --surface: #F8FAFC;
+      --slate: #374151;
+      --slate-2: #6B7280;
+      --white: #FFFFFF;
+      --border: #E5E7EB;
+      --font-display: 'Satoshi', 'Inter', -apple-system, system-ui, sans-serif;
+      --font-body: 'Inter', -apple-system, system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--white);
+      color: var(--deep-ink);
+      font-size: 15px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255,255,255,.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .nav-logo {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 24px;
+      letter-spacing: -0.03em;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .back-link {
+      color: var(--slate);
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .back-link:hover { color: var(--deep-ink); }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: var(--verio-blue);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .nav-cta:hover { background: var(--verio-blue-hover); }
+
+    .hero {
+      padding: 96px 0 64px;
+      background:
+        radial-gradient(circle at top right, rgba(37,99,235,.10), transparent 34%),
+        var(--white);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 14px;
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: var(--verio-blue);
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-size: clamp(42px, 6vw, 68px);
+      line-height: 1;
+      letter-spacing: -0.04em;
+      margin-bottom: 18px;
+    }
+
+    .hero-sub {
+      max-width: 760px;
+      font-size: 18px;
+      color: var(--slate);
+    }
+
+    .effective {
+      display: inline-flex;
+      margin-top: 24px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--slate);
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .content-wrap {
+      display: grid;
+      grid-template-columns: 250px minmax(0, 1fr);
+      gap: 64px;
+      padding: 72px 0 96px;
+    }
+
+    .toc {
+      position: sticky;
+      top: 104px;
+      align-self: start;
+      max-height: calc(100vh - 130px);
+      overflow-y: auto;
+      padding-right: 8px;
+    }
+
+    .toc-title {
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      margin-bottom: 14px;
+      color: var(--slate-2);
+    }
+
+    .toc a {
+      display: block;
+      padding: 6px 0;
+      font-size: 12.5px;
+      color: var(--slate-2);
+    }
+
+    .toc a:hover { color: var(--verio-blue); }
+
+    .content {
+      max-width: 780px;
+    }
+
+    .intro {
+      padding-bottom: 42px;
+      margin-bottom: 42px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .content section {
+      scroll-margin-top: 100px;
+      padding: 0 0 42px;
+      margin-bottom: 42px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .content section:last-child {
+      border-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    .content h2 {
+      font-family: var(--font-display);
+      font-size: 25px;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 14px;
+    }
+
+    .content p {
+      color: var(--slate);
+      margin-bottom: 14px;
+    }
+
+    .content ul {
+      margin: 14px 0 0 20px;
+      color: var(--slate);
+    }
+
+    .content li { margin: 7px 0; }
+
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      margin-top: 18px;
+    }
+
+    .contact-card strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .contact-card a {
+      color: var(--verio-blue);
+      font-weight: 600;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 36px 0;
+      color: var(--slate-2);
+      font-size: 13px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a:hover { color: var(--deep-ink); }
+
+    @media (max-width: 840px) {
+      .content-wrap { grid-template-columns: 1fr; gap: 36px; }
+      .toc { position: static; max-height: none; overflow: visible; }
+      .toc-links {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        gap: 0 16px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 0 20px; }
+      .nav-actions .back-link { display: none; }
+      .hero { padding: 72px 0 48px; }
+      .content-wrap { padding: 52px 0 72px; }
+      .toc-links { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="nav-logo" href="/">verio</a>
+      <div class="nav-actions">
+        <a class="back-link" href="/">Back to website</a>
+        <a class="nav-cta" href="mailto:contact@verio.global?subject=Verio%20demo%20request">Request a Demo</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <div class="eyebrow">Legal</div>
+      <h1>Terms of Use</h1>
+      <p class="hero-sub">These Terms govern access to and use of Verio’s websites, platform, applications and financial verification services.</p>
+      <div class="effective">Effective 21 August 2026</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="content-wrap">
+      <aside class="toc" aria-label="Terms of Use sections">
+        <div class="toc-title">On this page</div>
+        <div class="toc-links">
+          <a href="#about">1. About Verio</a>
+          <a href="#eligibility">2. Eligibility and Authority</a>
+          <a href="#under18">3. Applicants Under 18</a>
+          <a href="#sponsors">4. Sponsors and Third-Party Information</a>
+          <a href="#accounts">5. Accounts and Access</a>
+          <a href="#responsibilities">6. Your Responsibilities</a>
+          <a href="#consent">7. Consent and Financial Data Access</a>
+          <a href="#communications">8. Electronic Communications and Consent</a>
+          <a href="#verification">9. Verification and Assessment Services</a>
+          <a href="#results">10. Verification Results and Certificates</a>
+          <a href="#automation">11. Automated Analysis and Artificial Intelligence</a>
+          <a href="#accuracy">12. Accuracy and Limitations of Financial Information</a>
+          <a href="#third-parties">13. Third-Party Services</a>
+          <a href="#institutions">14. Educational Institutions and Other Organisations</a>
+          <a href="#privacy">15. Privacy and Data Protection</a>
+          <a href="#cross-border">16. Cross-Border Processing</a>
+          <a href="#security">17. Security</a>
+          <a href="#ip">18. Intellectual Property</a>
+          <a href="#feedback">19. Feedback</a>
+          <a href="#availability">20. Service Availability and Changes</a>
+          <a href="#termination">21. Suspension and Termination</a>
+          <a href="#sanctions">22. Export Controls and Sanctions</a>
+          <a href="#advice">23. No Financial, Legal or Immigration Advice</a>
+          <a href="#disclaimers">24. Disclaimers</a>
+          <a href="#liability">25. Limitation of Liability</a>
+          <a href="#indemnity">26. Indemnity</a>
+          <a href="#changes">27. Changes to These Terms</a>
+          <a href="#law">28. Governing Law and Jurisdiction</a>
+          <a href="#general">29. General</a>
+          <a href="#contact">30. Contact Us</a>
+        </div>
+      </aside>
+
+      <article class="content">
+        <div class="intro">
+          <p>These Terms of Use (“Terms”) govern access to and use of the websites, platform, applications and services provided by Verio Pte. Ltd. (“Verio”, “we”, “us” or “our”) (collectively, the “Services”).</p>
+          <p>By accessing or using the Services, you agree to these Terms. If you are using the Services on behalf of an organisation, you represent that you have authority to act on behalf of that organisation.</p>
+          <p>If you do not agree to these Terms, you should not use the Services.</p>
+        </div>
+
+        <section id="about">
+          <h2>1. About Verio</h2>
+          <p>Verio provides technology that helps educational institutions and other authorised organisations obtain, verify and assess financial information supplied or authorised by applicants, students, sponsors and other permitted individuals.</p>
+          <p>Depending on the Services being used, Verio may facilitate the retrieval of financial information from banks, financial institutions, regulated data-sharing networks or other authorised data providers and may analyse that information against requirements specified by an educational institution or other authorised organisation.</p>
+          <p>Verio provides verification and assessment technology. Verio does not make admission, enrolment, visa, immigration, lending or other eligibility decisions. Final decisions remain with the relevant educational institution, government authority or other decision-making organisation.</p>
+        </section>
+
+        <section id="eligibility">
+          <h2>2. Eligibility and Authority</h2>
+          <p>You may use the Services only where you are legally permitted to do so.</p>
+          <p>If you use the Services on behalf of another person or an organisation, you represent and warrant that you have the authority and any permissions required to do so.</p>
+          <p>The Services may be used in connection with applicants under the age of 18 where permitted by applicable law and where any required permissions, authorisations or consents have been obtained.</p>
+          <p>You must not use the Services if your use would violate applicable law or these Terms.</p>
+        </section>
+
+        <section id="under18">
+          <h2>3. Applicants Under 18</h2>
+          <p>Verio may process personal and financial information relating to applicants under the age of 18 where necessary to provide the Services and where permitted by applicable law.</p>
+          <p>Where an applicant is under 18, any consent, permission or authorisation required by applicable law must be provided or obtained from the appropriate person, which may include the applicant, a parent, legal guardian or other authorised representative.</p>
+          <p>The specific consent requirements may differ depending on the applicant’s age, location, the nature of the information being processed and applicable law.</p>
+          <p>Verio does not knowingly process information relating to applicants under 18 except in connection with legitimate educational verification purposes or as otherwise permitted by applicable law.</p>
+        </section>
+
+        <section id="sponsors">
+          <h2>4. Sponsors and Third-Party Information</h2>
+          <p>The Services may allow financial information belonging to a parent, legal guardian, family member, sponsor or other third party to be used in support of an applicant.</p>
+          <p>A sponsor may be required to separately authenticate, connect or authorise access to their financial information.</p>
+          <p>Where you provide information relating to another individual, you represent that you are authorised to provide that information and that any permissions or consents required by applicable law have been obtained.</p>
+          <p>You must not provide, access or attempt to obtain another person’s financial information without appropriate authority.</p>
+        </section>
+
+        <section id="accounts">
+          <h2>5. Accounts and Access</h2>
+          <p>Certain Services may require an account or other means of authentication.</p>
+          <p>You are responsible for:</p>
+          <ul>
+            <li>providing accurate and current information;</li>
+            <li>maintaining the confidentiality of your login credentials;</li>
+            <li>taking reasonable steps to prevent unauthorised access to your account; and</li>
+            <li>notifying Verio promptly if you believe your account or credentials have been compromised.</li>
+          </ul>
+          <p>You must not share authentication credentials where doing so could compromise the security of the Services or another person’s information.</p>
+          <p>We may suspend or restrict access where reasonably necessary to protect users, information, our systems or third parties.</p>
+        </section>
+
+        <section id="responsibilities">
+          <h2>6. Your Responsibilities</h2>
+          <p>When using the Services, you agree to:</p>
+          <ul>
+            <li>provide information that is accurate and complete to the best of your knowledge;</li>
+            <li>use the Services only for legitimate and lawful purposes;</li>
+            <li>provide information only where you have the right or authority to do so;</li>
+            <li>comply with applicable laws and regulations; and</li>
+            <li>cooperate with reasonable steps necessary to complete a verification.</li>
+          </ul>
+          <p>You must not:</p>
+          <ul>
+            <li>provide false, misleading, fraudulent or manipulated information;</li>
+            <li>impersonate another person;</li>
+            <li>attempt to circumvent a verification or security control;</li>
+            <li>access information without authorisation;</li>
+            <li>interfere with the operation or security of the Services;</li>
+            <li>introduce malware, malicious code or other harmful material;</li>
+            <li>scrape or systematically extract information from the Services without our written permission;</li>
+            <li>reverse engineer, decompile or attempt to discover source code except where such restriction is prohibited by law; or</li>
+            <li>use the Services in a manner that infringes the rights of another person.</li>
+          </ul>
+        </section>
+
+        <section id="consent">
+          <h2>7. Consent and Financial Data Access</h2>
+          <p>Certain verification processes require you or a sponsor to expressly authorise access to financial information.</p>
+          <p>Depending on the country, bank and service being used, this authorisation may take place through a bank, regulated financial data-sharing framework, account aggregator, open banking or open finance provider, or another authorised third-party provider.</p>
+          <p>The scope and duration of any authorisation will be presented as part of the relevant consent process.</p>
+          <p>Verio will not require you to provide online banking passwords directly to Verio unless expressly disclosed and permitted as part of an authorised service. Where authentication takes place through a bank or third-party provider, that authentication is governed by the relevant provider’s processes.</p>
+          <p>You may be able to withdraw or revoke consent in accordance with applicable law and the relevant provider’s procedures. Withdrawal of consent may prevent Verio from completing or updating a verification.</p>
+        </section>
+
+        <section id="communications">
+          <h2>8. Electronic Communications and Consent</h2>
+          <p>By using the Services, you agree that communications, notices, disclosures, authorisations and consents may be provided electronically where permitted by applicable law.</p>
+          <p>Electronic actions taken through the Services may constitute evidence of your instructions, consent or authorisation.</p>
+          <p>Where electronic signatures are used, they may have the same legal effect as handwritten signatures to the extent recognised under applicable law.</p>
+        </section>
+
+        <section id="verification">
+          <h2>9. Verification and Assessment Services</h2>
+          <p>Verio may analyse verified financial information to assist an authorised organisation in determining whether specified financial requirements appear to have been satisfied.</p>
+          <p>Depending on the verification being performed, this may include assessment of matters such as:</p>
+          <ul>
+            <li>account ownership;</li>
+            <li>account status and type;</li>
+            <li>available or reported balances;</li>
+            <li>historical balance information;</li>
+            <li>maintenance of funds over a specified period;</li>
+            <li>transactions or material changes in balances;</li>
+            <li>information relating to permitted sponsors;</li>
+            <li>education funding or loan information where available;</li>
+            <li>completeness of the available evidence; and</li>
+            <li>other requirements specified by an authorised organisation.</li>
+          </ul>
+          <p>The information and assessment available will depend on the underlying financial institution, data provider, country, consent provided and technical availability.</p>
+          <p>A Verio verification or assessment reflects information available at the time it was performed. It is not a guarantee that the information will remain unchanged or that an applicant will satisfy future requirements.</p>
+        </section>
+
+        <section id="results">
+          <h2>10. Verification Results and Certificates</h2>
+          <p>Verio may generate reports, summaries, certificates, verification references or other outputs based on information processed through the Services.</p>
+          <p>These outputs are intended to provide an auditable record of the verification or assessment performed at a particular point in time.</p>
+          <p>A Verio result does not constitute a guarantee of:</p>
+          <ul>
+            <li>admission or enrolment;</li>
+            <li>issuance of a visa;</li>
+            <li>acceptance by an immigration authority;</li>
+            <li>an individual’s financial capacity;</li>
+            <li>the future availability of funds;</li>
+            <li>the absence of fraud; or</li>
+            <li>compliance with every requirement that may apply to an applicant.</li>
+          </ul>
+          <p>The receiving institution or authority remains responsible for determining whether the information satisfies its requirements.</p>
+        </section>
+
+        <section id="automation">
+          <h2>11. Automated Analysis and Artificial Intelligence</h2>
+          <p>Verio may use automated systems, algorithms or artificial intelligence to assist with functions such as information extraction, classification, analysis, identification of inconsistencies, application of verification rules or generation of assessment outputs.</p>
+          <p>Automated analysis is intended to support the verification process and the organisations using the Services.</p>
+          <p>Unless expressly stated otherwise, Verio’s automated systems do not make final admission, visa, immigration or other eligibility decisions.</p>
+          <p>Educational institutions, government authorities and other authorised organisations remain responsible for decisions made using information provided through the Services.</p>
+        </section>
+
+        <section id="accuracy">
+          <h2>12. Accuracy and Limitations of Financial Information</h2>
+          <p>Verio relies on information obtained from users, financial institutions, authorised data providers and other third parties.</p>
+          <p>While Verio takes reasonable steps to preserve the integrity of information processed through the Services, we cannot guarantee that information supplied by third parties is complete, accurate or error-free.</p>
+          <p>Financial information may be affected by:</p>
+          <ul>
+            <li>delays in financial institution systems;</li>
+            <li>incomplete historical information;</li>
+            <li>unavailable accounts or transactions;</li>
+            <li>outages or technical errors;</li>
+            <li>limitations imposed by a financial institution or data provider; or</li>
+            <li>changes occurring after information was retrieved.</li>
+          </ul>
+          <p>Where appropriate, the Services may identify incomplete or inconclusive verification results rather than treating unavailable information as verified.</p>
+        </section>
+
+        <section id="third-parties">
+          <h2>13. Third-Party Services</h2>
+          <p>The Services may integrate with or depend upon banks, financial institutions, account aggregators, open banking or open finance providers, identity providers, cloud providers and other third-party services.</p>
+          <p>These services are operated independently from Verio and may be governed by their own terms and privacy policies.</p>
+          <p>Verio does not control third-party systems and cannot guarantee their continuous availability or performance.</p>
+          <p>Verio is not responsible for failures, delays or inaccuracies caused solely by a third-party service where those matters are outside Verio’s reasonable control.</p>
+        </section>
+
+        <section id="institutions">
+          <h2>14. Educational Institutions and Other Organisations</h2>
+          <p>Universities, colleges and other organisations using Verio may be subject to separate agreements with Verio.</p>
+          <p>Those agreements may contain additional provisions relating to matters including:</p>
+          <ul>
+            <li>permitted use;</li>
+            <li>data protection and processing;</li>
+            <li>confidentiality;</li>
+            <li>security;</li>
+            <li>service levels;</li>
+            <li>support;</li>
+            <li>pricing and payment;</li>
+            <li>implementation;</li>
+            <li>retention and deletion;</li>
+            <li>liability; and</li>
+            <li>regulatory obligations.</li>
+          </ul>
+          <p>Where a separate written agreement between Verio and an organisation conflicts with these Terms, the separate written agreement will prevail to the extent of that conflict.</p>
+        </section>
+
+        <section id="privacy">
+          <h2>15. Privacy and Data Protection</h2>
+          <p>Verio processes personal information in accordance with our <a href="/privacy.html" style="color:#2563EB;font-weight:600;">Privacy Policy</a> and applicable data protection laws.</p>
+          <p>Financial information may constitute sensitive or otherwise protected information under applicable law and is handled in accordance with appropriate technical and organisational safeguards.</p>
+          <p>Depending on the verification process and the parties involved, personal information may be processed by Verio, an educational institution, a financial institution or an authorised third-party provider.</p>
+          <p>Our Privacy Policy provides further information about how personal information is collected, used, disclosed, retained and protected and about rights that may be available to individuals.</p>
+        </section>
+
+        <section id="cross-border">
+          <h2>16. Cross-Border Processing</h2>
+          <p>Verio operates internationally and may use service providers or infrastructure located in countries other than the country in which you are located.</p>
+          <p>Where personal information is transferred internationally, Verio will take steps required under applicable law to protect that information and implement appropriate transfer mechanisms where required.</p>
+          <p>Further information about international transfers is provided in our Privacy Policy.</p>
+        </section>
+
+        <section id="security">
+          <h2>17. Security</h2>
+          <p>Verio maintains technical and organisational measures designed to protect information processed through the Services against unauthorised access, disclosure, alteration or loss.</p>
+          <p>However, no internet-based service or information system can be guaranteed to be completely secure.</p>
+          <p>You are responsible for taking reasonable precautions to protect your devices, accounts and authentication credentials.</p>
+          <p>If you become aware of a suspected security issue involving the Services, you should notify Verio promptly.</p>
+        </section>
+
+        <section id="ip">
+          <h2>18. Intellectual Property</h2>
+          <p>The Services and all intellectual property associated with them, including Verio’s software, technology, designs, interfaces, branding, trademarks, documentation and original content, are owned by Verio or its licensors.</p>
+          <p>Subject to these Terms, Verio grants you a limited, non-exclusive, non-transferable and revocable right to access and use the Services for their intended purpose.</p>
+          <p>Nothing in these Terms transfers ownership of Verio’s intellectual property to you.</p>
+          <p>You may not reproduce, distribute, modify, sell, license or commercially exploit Verio’s intellectual property except with our written permission or where permitted by law.</p>
+        </section>
+
+        <section id="feedback">
+          <h2>19. Feedback</h2>
+          <p>If you provide suggestions, ideas or feedback relating to the Services, you grant Verio permission to use that feedback without restriction or compensation to you, provided that doing so does not identify you or disclose your confidential information without permission.</p>
+        </section>
+
+        <section id="availability">
+          <h2>20. Service Availability and Changes</h2>
+          <p>We aim to provide reliable Services but do not guarantee that the Services will always be available, uninterrupted or error-free.</p>
+          <p>We may modify, update, suspend or discontinue features where reasonably necessary for operational, security, technical, commercial or legal reasons.</p>
+          <p>Where practical and appropriate, we will seek to minimise disruption to users.</p>
+          <p>Specific service-level commitments provided to an organisation will be governed by its separate agreement with Verio rather than these Terms.</p>
+        </section>
+
+        <section id="termination">
+          <h2>21. Suspension and Termination</h2>
+          <p>We may suspend or terminate your access to the Services where reasonably necessary, including where:</p>
+          <ul>
+            <li>you materially breach these Terms;</li>
+            <li>we reasonably suspect fraudulent or unlawful activity;</li>
+            <li>your use creates a security risk;</li>
+            <li>continued access could cause Verio to breach applicable law; or</li>
+            <li>an organisation responsible for your access instructs us to terminate that access.</li>
+          </ul>
+          <p>You may stop using the Services at any time.</p>
+          <p>Termination does not affect rights or obligations that accrued before termination.</p>
+        </section>
+
+        <section id="sanctions">
+          <h2>22. Export Controls and Sanctions</h2>
+          <p>You must not use the Services where doing so would violate applicable sanctions, export controls, trade restrictions or other applicable laws.</p>
+          <p>Verio may restrict or refuse access to the Services where reasonably necessary to comply with such requirements.</p>
+        </section>
+
+        <section id="advice">
+          <h2>23. No Financial, Legal or Immigration Advice</h2>
+          <p>Information and assessments provided through the Services are provided for verification and informational purposes.</p>
+          <p>Verio does not provide financial, investment, legal, immigration or visa advice.</p>
+          <p>Nothing provided through the Services should be treated as a substitute for advice from an appropriately qualified professional or guidance issued by an educational institution or government authority.</p>
+        </section>
+
+        <section id="disclaimers">
+          <h2>24. Disclaimers</h2>
+          <p>To the fullest extent permitted by applicable law, the Services are provided on an “as is” and “as available” basis.</p>
+          <p>Except as expressly stated in a separate written agreement, Verio does not warrant that:</p>
+          <ul>
+            <li>the Services will always be available or error-free;</li>
+            <li>every financial institution or account can be accessed;</li>
+            <li>all information supplied by third parties will be complete or accurate;</li>
+            <li>a verification will produce a conclusive result; or</li>
+            <li>use of the Services will result in a particular admission, visa, immigration or other outcome.</li>
+          </ul>
+          <p>Nothing in these Terms excludes warranties, rights or remedies that cannot lawfully be excluded.</p>
+        </section>
+
+        <section id="liability">
+          <h2>25. Limitation of Liability</h2>
+          <p>To the fullest extent permitted by applicable law, Verio will not be liable for indirect, incidental, special, exemplary, punitive or consequential loss arising from or relating to use of the Services.</p>
+          <p>Verio will not be responsible for decisions made independently by educational institutions, government authorities, financial institutions or other third parties based on information provided through the Services.</p>
+          <p>Where Verio’s liability cannot lawfully be excluded, Verio’s aggregate liability arising out of or relating to these Terms will, to the fullest extent permitted by law, be limited to the amount paid to Verio by or on behalf of the relevant user for the Services giving rise to the claim during the twelve months preceding the event giving rise to liability.</p>
+          <p>Where an organisation has entered into a separate written agreement with Verio, liability between Verio and that organisation will be governed by that agreement.</p>
+          <p>Nothing in these Terms limits or excludes liability where doing so would be prohibited by applicable law.</p>
+        </section>
+
+        <section id="indemnity">
+          <h2>26. Indemnity</h2>
+          <p>To the extent permitted by applicable law, you agree to indemnify Verio and its directors, officers and employees against claims, losses, liabilities and reasonable costs arising directly from:</p>
+          <ul>
+            <li>your fraudulent or unlawful use of the Services;</li>
+            <li>information you knowingly provide without authority;</li>
+            <li>your material breach of these Terms; or</li>
+            <li>your infringement of another person’s rights.</li>
+          </ul>
+          <p>This section does not apply to the extent that a claim results from Verio’s own breach, negligence or unlawful conduct.</p>
+        </section>
+
+        <section id="changes">
+          <h2>27. Changes to These Terms</h2>
+          <p>We may update these Terms from time to time to reflect changes to the Services, applicable law, regulatory requirements or our business.</p>
+          <p>The current version will be made available through our website and will identify the date on which it became effective.</p>
+          <p>Where changes materially affect your rights or obligations, we will provide additional notice where required by applicable law.</p>
+          <p>Your continued use of the Services after updated Terms become effective constitutes acceptance of those Terms where permitted by law.</p>
+        </section>
+
+        <section id="law">
+          <h2>28. Governing Law and Jurisdiction</h2>
+          <p>These Terms are governed by the laws of Singapore, without regard to conflict-of-law principles.</p>
+          <p>Subject to any rights or protections that cannot be excluded under applicable law, disputes arising out of or relating to these Terms or the Services will be subject to the exclusive jurisdiction of the courts of Singapore.</p>
+        </section>
+
+        <section id="general">
+          <h2>29. General</h2>
+          <p>If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions will continue in effect.</p>
+          <p>Our failure to enforce a provision of these Terms does not constitute a waiver of that provision or any other right.</p>
+          <p>You may not transfer your rights or obligations under these Terms without our prior written consent. Verio may transfer its rights and obligations in connection with a merger, acquisition, corporate restructuring or sale of all or substantially all of its relevant business or assets, subject to applicable law.</p>
+          <p>These Terms, together with our Privacy Policy and any other terms expressly incorporated by reference, constitute the agreement governing your use of the Services, except where a separate written agreement with Verio applies.</p>
+        </section>
+
+        <section id="contact">
+          <h2>30. Contact Us</h2>
+          <p>If you have questions about these Terms or the Services, please contact:</p>
+          <div class="contact-card">
+            <strong>Verio Pte. Ltd.</strong>
+            <p>Singapore</p>
+            <p>Email: <a href="mailto:contact@verio.global">contact@verio.global</a></p>
+            <p>Website: <a href="https://www.verio.global/">verio.global</a></p>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© 2026 Verio Global. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/security.html">Security, Privacy &amp; Trust</a>
+        <a href="/terms.html">Terms of Use</a>
+        <a href="/">Back to website</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
