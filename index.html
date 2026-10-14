@@ -829,7 +829,7 @@
 
       <div class="map-wrap" id="map-wrap">
         <div class="map-loading" id="map-loading">Loading map…</div>
-        <svg id="map-svg" class="map-svg" viewBox="35 25 930 385" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="World map showing representative applicant locations" style="display:none;">
+        <svg id="map-svg" class="map-svg" viewBox="165 70 780 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="World map showing representative applicant locations" style="display:none;">
           <defs>
             <!-- Larger, denser dotted land pattern -->
             <pattern id="landDots" x="0" y="0" width="5" height="5" patternUnits="userSpaceOnUse">
@@ -1232,8 +1232,8 @@
         g.setAttribute('class', 'pin-group');
         g.setAttribute('transform', `translate(${x.toFixed(1)},${y.toFixed(1)})`);
         g.innerHTML = `
-          <circle cx="0" cy="0" r="9" fill="#2563EB" opacity="0.10"/>
-          <circle cx="0" cy="0" r="4.5" fill="#2563EB" stroke="#FFFFFF" stroke-width="2"/>
+          <circle cx="0" cy="0" r="16" fill="#2563EB" opacity="0.14"/>
+          <circle cx="0" cy="0" r="8" fill="#2563EB" stroke="#FFFFFF" stroke-width="2.5"/>
         `;
         pinsLayer.appendChild(g);
       }
