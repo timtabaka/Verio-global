@@ -718,6 +718,9 @@
   .hero-grid > *, .cert-showcase-grid > * { min-width: 0; }
   .map-wrap { flex-direction: row; align-items: center; min-height: 320px; }
   .map-svg { min-height: 0; overflow: hidden; }
+  @media (min-width: 961px) {
+    .map-wrap { transform: translateY(-44px); }
+  }
   .hero-title { font-size: clamp(36px, 4.1vw, 52px); line-height: 1.1; text-wrap: balance; }
   .hero-title .accent { color: var(--verio-blue); }
   .hero-subtitle { font-size: 17px; }
