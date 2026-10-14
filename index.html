@@ -717,7 +717,7 @@
   .hero-grid { grid-template-columns: minmax(380px, 520px) minmax(0, 1fr); gap: 40px; }
   .hero-grid > *, .cert-showcase-grid > * { min-width: 0; }
   .map-wrap { flex-direction: row; align-items: center; min-height: 320px; }
-  .map-svg { min-height: 300px; overflow: visible; }
+  .map-svg { min-height: 0; overflow: hidden; }
   .hero-title { font-size: clamp(36px, 4.1vw, 52px); line-height: 1.1; text-wrap: balance; }
   .hero-title .accent { color: var(--verio-blue); }
   .hero-subtitle { font-size: 17px; }
@@ -829,7 +829,7 @@
 
       <div class="map-wrap" id="map-wrap">
         <div class="map-loading" id="map-loading">Loading map…</div>
-        <svg id="map-svg" class="map-svg" viewBox="165 70 780 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="World map showing representative applicant locations" style="display:none;">
+        <svg id="map-svg" class="map-svg" viewBox="55 40 930 365" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="World map showing representative applicant locations" style="display:none;">
           <defs>
             <!-- Larger, denser dotted land pattern -->
             <pattern id="landDots" x="0" y="0" width="5" height="5" patternUnits="userSpaceOnUse">
