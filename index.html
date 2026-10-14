@@ -716,6 +716,8 @@
   .hero { padding: 124px 0 48px; }
   .hero-grid { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 48px; }
   .hero-grid > *, .cert-showcase-grid > * { min-width: 0; }
+  .map-wrap { flex-direction: column; justify-content: center; }
+  .map-caption { margin-top: 12px; font-size: 12px; color: var(--slate-2); text-align: center; }
   .hero-title { font-size: clamp(36px, 4.1vw, 52px); line-height: 1.1; text-wrap: balance; }
   .hero-title .accent { color: var(--verio-blue); }
   .hero-subtitle { font-size: 17px; }
@@ -827,7 +829,7 @@
 
       <div class="map-wrap" id="map-wrap">
         <div class="map-loading" id="map-loading">Loading map…</div>
-        <svg id="map-svg" class="map-svg" viewBox="230 42 770 358" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of international financial verification connections" style="display:none;">
+        <svg id="map-svg" class="map-svg" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrative verification journeys from applicant locations across the world" style="display:none;">
           <defs>
             <!-- Larger, denser dotted land pattern -->
             <pattern id="landDots" x="0" y="0" width="5" height="5" patternUnits="userSpaceOnUse">
@@ -854,7 +856,7 @@
           <!-- Pulse rings (one per pin, animated on demand) -->
           <g id="pulse-layer"></g>
 
-          <!-- Static pins (injected by JS) -->
+          <!-- Representative applicant pins (injected by JS) -->
           <g id="pins-layer"></g>
 
           <!-- Packet dots -->
@@ -863,6 +865,7 @@
             <circle id="response-packet" r="3" style="opacity:0" filter="url(#packetGlow)"/>
           </g>
         </svg>
+        <p class="map-caption">Illustrative verification journeys</p>
       </div>
     </div>
   </div>
@@ -1162,12 +1165,14 @@
     { city: 'Singapore',   lat:   1.35, lon: 103.82 },
   ];
 
-  // Students (green pins), all in India, where verifications happen
+  // Representative applicant locations; illustrations, not live activity.
   const STUDENTS = [
     { city: 'Mumbai',    lat: 19.08, lon: 72.88 },
-    { city: 'Delhi',     lat: 28.61, lon: 77.21 },
-    { city: 'Bangalore', lat: 12.97, lon: 77.59 },
-    { city: 'Chennai',   lat: 13.08, lon: 80.27 },
+    { city: 'Beijing',   lat: 39.90, lon: 116.41 },
+    { city: 'Lagos',     lat: 6.52, lon: 3.38 },
+    { city: 'Warsaw',    lat: 52.23, lon: 21.01 },
+    { city: 'São Paulo', lat: -23.55, lon: -46.63 },
+    { city: 'Mexico City', lat: 19.43, lon: -99.13 },
   ];
 
   // Outcome colors (rotate through Verified, Review, Flagged)
@@ -1234,7 +1239,8 @@
         pinsLayer.appendChild(g);
       }
 
-      UNIVERSITIES.forEach(c => renderPin(c, 'pin-body-blue', 'pin-shadow-blue'));
+      // Destination anchors stay unmarked; flags below identify study destinations.
+      UNIVERSITIES.forEach(c => Object.assign(c, project(c.lat, c.lon)));
       STUDENTS.forEach(c => renderPin(c, 'pin-body-green', 'pin-shadow-green'));
 
       loading.style.display = 'none';
@@ -1294,13 +1300,13 @@
     const dx = b.x - a.x, dy = b.y - a.y;
     const distance = Math.sqrt(dx * dx + dy * dy);
     const midX = (a.x + b.x) / 2;
-    const midY = (a.y + b.y) / 2 - (distance * 0.30 + 25 + liftBoost);
+    const midY = Math.max(20, (a.y + b.y) / 2 - (distance * 0.30 + 25 + liftBoost));
     return `M ${a.x.toFixed(1)},${a.y.toFixed(1)} Q ${midX.toFixed(1)},${midY.toFixed(1)} ${b.x.toFixed(1)},${b.y.toFixed(1)}`;
   }
 
   function startNewCycle() {
     currentUni = UNIVERSITIES[cycleIndex % UNIVERSITIES.length];
-    currentStudent = STUDENTS[Math.floor(Math.random() * STUDENTS.length)];
+    currentStudent = STUDENTS[cycleIndex % STUDENTS.length];
     currentOutcome = OUTCOMES[cycleIndex % OUTCOMES.length];
     cycleIndex++;
 
