@@ -726,7 +726,7 @@
   .hero-subtitle { font-size: 17px; }
   .hero-marquee { margin-top: 40px; padding: 22px 0; gap: 12px; }
   .marquee-label { margin-bottom: 0; }
-  section.stripe { padding: 88px 0; }
+  section.stripe { padding: 72px 0; }
   .how-grid, .features-grid, .cert-showcase-grid { margin-top: 40px; }
   .how-step { display: flex; flex-direction: column; align-items: flex-start; }
   .how-step-meta { margin-top: auto; padding-top: 6px; }
@@ -746,13 +746,14 @@
   .reveal { opacity: 1; transform: none; }
   @media (max-width: 960px) {
     .hero-grid, .cert-showcase-grid { grid-template-columns: 1fr; gap: 32px; }
+    .hero-grid { gap: 20px; }
     .hero { padding: 108px 0 32px; }
     .hero-title { max-width: 720px; font-size: clamp(36px, 6vw, 48px); }
     .hero-subtitle { max-width: 680px; }
-    .map-wrap { max-width: 640px; margin: 0 auto; min-height: 220px; }
+    .map-wrap { max-width: 640px; margin: 0 auto; min-height: 0; }
     .map-svg { min-height: 0; }
     .nav-links { display: flex; }
-    section.stripe { padding: 64px 0; }
+    section.stripe { padding: 48px 0; }
     .features-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; }
   }
