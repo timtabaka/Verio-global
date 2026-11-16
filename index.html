@@ -777,6 +777,24 @@
     html { scroll-behavior: auto; }
     *, *::before, *::after { animation: none !important; transition: none !important; }
   }
+  /* Homepage hierarchy refinements */
+  .hero-ctas { justify-content: flex-start; width: 100%; }
+  .hero-ctas .btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; margin-left: 0; }
+  .hero-ctas .btn-primary svg { flex-shrink: 0; }
+  .cert-showcase-grid { gap: 56px; }
+  .cert-visual { padding: 40px; }
+  .cert-paper { box-shadow: 0 18px 48px rgba(10,15,28,.12); }
+  .cert-paper-outcome { margin-top: 24px; }
+  .trust .section-lead { color: #E2E8F0; }
+  .trust .compliance-desc { color: #E2E8F0; font-size: 14px; line-height: 1.7; }
+  .trust-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .trust .compliance-title { font-size: 19px; margin-bottom: 14px; }
+  .trust-details { display: flex; flex-wrap: wrap; gap: 16px 28px; margin-top: 32px; font-size: 14px; }
+  .trust-details a { color: var(--verio-blue-light); text-decoration: underline; text-underline-offset: 4px; }
+  .trust-details span { flex-basis: 100%; max-width: 700px; color: #CBD5E1; font-size: 13px; line-height: 1.7; }
+  @media (min-width: 961px) { .cert-showcase-grid { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); } }
+  @media (max-width: 960px) { .trust-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .cert-showcase-grid { gap: 32px; } }
+  @media (max-width: 540px) { .trust-grid { grid-template-columns: 1fr; } .cert-visual { padding: 28px 12px; } }
   /* Mobile section picker */
   section[id] { scroll-margin-top: 96px; }
   .mobile-menu { display: none; }
@@ -828,8 +846,8 @@
           Secure, consent-driven financial verification
         </div>
         <h1 class="hero-title">
-          Building the global standard<br>
-          <span class="accent">for consent-based financial verification.</span>
+          Direct from the bank.<br>
+          <span class="accent">Confidence in every decision.</span>
         </h1>
         <p class="hero-subtitle">
           Verio helps education providers verify financial capacity across international markets, reducing fraud risk, simplifying financial assessments and enabling faster, more confident admissions decisions.
@@ -844,7 +862,7 @@
           <span class="hero-badges-label">Built for</span>
           <div class="hero-badge">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-            Trusted outcomes designed to reduce fraud and compliance risk
+            Evidence to support admissions review
           </div>
           <div class="hero-badge">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
@@ -852,7 +870,7 @@
           </div>
           <div class="hero-badge">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-            Secure, consent-driven and built for global admissions
+            Built for international admissions
           </div>
         </div>
       </div>
@@ -932,9 +950,9 @@
       <div class="section-eyebrow">Solutions</div>
       <h2 class="section-heading">
           <span>From verification request</span><br>
-          <span>to a clear financial assessment.</span>
+          <span>to a clear financial assessment</span>
         </h2>
-      <p class="section-lead">Verio brings student and sponsor financial verification into one admissions workflow, helping education providers assess financial capacity against their requirements and receive a clear, standardised outcome.</p>
+      <p class="section-lead">One workflow for student and sponsor funding. Assess financial capacity against your university’s requirements and receive a standardised outcome.</p>
     </div>
     <div class="how-grid">
       <div class="how-step reveal">
@@ -952,7 +970,7 @@
       <div class="how-step reveal">
         <div class="how-step-num">3</div>
         <div class="how-step-title">Assess financial capacity</div>
-        <div class="how-step-desc">Verio assesses financial information against the institution’s requirements to support a consistent admissions review.</div>
+        <div class="how-step-desc">Verio assesses financial information against the university’s requirements to support a consistent admissions review.</div>
         <div class="how-step-meta"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Institution-defined requirements</div>
       </div>
       <div class="how-step reveal">
@@ -969,8 +987,8 @@
   <div class="container">
     <div class="reveal">
       <div class="section-eyebrow">The output</div>
-      <h2 class="section-heading">One certificate. A trusted financial outcome.</h2>
-      <p class="section-lead">A clear financial verification certificate helps admissions teams understand the assessment outcome and make more confident decisions.</p>
+      <h2 class="section-heading">Clear financial evidence. Confident admissions decisions</h2>
+      <p class="section-lead">See the amount assessed, the requirement applied and the outcome in one certificate.</p>
     </div>
     <div class="cert-showcase-grid">
       <div class="cert-visual reveal">
@@ -1010,8 +1028,8 @@
         <div class="cert-feature">
           <div class="cert-feature-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
           <div>
-            <div class="cert-feature-title">Digitally signed and secure</div>
-            <div class="cert-feature-desc">Each certificate is digitally signed to help confirm its authenticity and integrity.</div>
+            <div class="cert-feature-title">Digitally signed</div>
+            <div class="cert-feature-desc">Confirm the certificate’s authenticity and integrity.</div>
           </div>
         </div>
         <div class="cert-feature">
@@ -1024,15 +1042,15 @@
         <div class="cert-feature">
           <div class="cert-feature-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
           <div>
-            <div class="cert-feature-title">Assessed against institutional requirements</div>
-            <div class="cert-feature-desc">Financial capacity is assessed against your institution’s requirements and applicable destination-country policies, with the result presented in the certificate.</div>
+            <div class="cert-feature-title">Your university’s requirements</div>
+            <div class="cert-feature-desc">See how the assessed funds compare with your requirements and applicable destination-country policies.</div>
           </div>
         </div>
         <div class="cert-feature">
           <div class="cert-feature-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
           <div>
-            <div class="cert-feature-title">Decision-ready outcomes</div>
-            <div class="cert-feature-desc">Admissions teams receive a clear financial assessment outcome to support their review and decision.</div>
+            <div class="cert-feature-title">An outcome you can review</div>
+            <div class="cert-feature-desc">A financial assessment to support your admissions team’s decision.</div>
           </div>
         </div>
       </div>
@@ -1044,8 +1062,8 @@
   <div class="container">
     <div class="reveal">
       <div class="section-eyebrow">Built for real-world admissions</div>
-      <h2 class="section-heading">Financial verification built around student funding.</h2>
-      <p class="section-lead">Students may fund their studies through personal savings, family support or sponsor funding. Verio assesses their financial capacity against institutional requirements and applicable destination-country policies.</p>
+      <h2 class="section-heading">Financial verification built around student funding</h2>
+      <p class="section-lead">Students may fund their studies through personal savings, family support or sponsor funding. Verio assesses their financial capacity against university requirements and applicable destination-country policies.</p>
     </div>
     <div class="features-grid">
       <div class="feature reveal">
@@ -1061,7 +1079,7 @@
       <div class="feature reveal">
         <div class="feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
         <div class="feature-title">Financial stability assessment</div>
-        <div class="feature-desc">Verio assesses financial stability against institutional requirements and applicable destination-country policies.</div>
+        <div class="feature-desc">Verio assesses financial stability against university requirements and applicable destination-country policies.</div>
       </div>
       <div class="feature reveal">
         <div class="feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
@@ -1086,27 +1104,24 @@
   <div class="container">
     <div class="reveal">
       <div class="section-eyebrow" style="color: #60A5FA;">Security, Privacy &amp; Trust</div>
-      <h2 class="section-heading" style="color: var(--white);">Built for regulated environments.</h2>
-      <p class="section-lead">Verio is designed to support secure, privacy-conscious financial verification across borders, with controls that continue to evolve alongside customer and regulatory requirements.</p>
+      <h2 class="section-heading" style="color: var(--white);">Built for regulated environments</h2>
+      <p class="section-lead">Each person controls access to their information. Encryption, permissions and audit records protect the verification process.</p>
     </div>
     <div class="trust-grid">
-      <div class="compliance reveal"><div class="compliance-status">Designed for</div><div class="compliance-title">Consent-driven verification</div><div class="compliance-region">Financial information</div><div class="compliance-desc">Verio is designed to support financial verification with explicit consent from each participating student and sponsor.</div></div>
-      <div class="compliance reveal"><div class="compliance-status">Designed for</div><div class="compliance-title">Privacy-conscious processing</div><div class="compliance-region">Data privacy</div><div class="compliance-desc">Designed to support purpose-bound consent, data minimisation and appropriate data-retention controls.</div></div>
-      <div class="compliance reveal"><div class="compliance-status">Designed for</div><div class="compliance-title">Applicable data protection requirements</div><div class="compliance-region">United Kingdom</div><div class="compliance-desc">Designed to support applicable privacy and data protection requirements for cross-border university workflows.</div></div>
-      <div class="compliance reveal"><div class="compliance-status">Designed for</div><div class="compliance-title">Applicable data protection requirements</div><div class="compliance-region">Australia</div><div class="compliance-desc">Designed to support appropriate consent, purpose limitation and cross-border data safeguards.</div></div>
-      <div class="compliance reveal"><div class="compliance-status wip">Working towards</div><div class="compliance-title">SOC 2 readiness</div><div class="compliance-region">Security controls</div><div class="compliance-desc">Developing the policies, controls and evidence required to support a future SOC 2 assurance programme.</div></div>
-      <div class="compliance reveal"><div class="compliance-status wip">Working towards</div><div class="compliance-title">ISO 27001 readiness</div><div class="compliance-region">Information security</div><div class="compliance-desc">Developing an information security management framework aligned with ISO 27001 principles.</div></div>
-      <div class="compliance reveal"><div class="compliance-status wip">Ongoing</div><div class="compliance-title">Security testing</div><div class="compliance-region">Product development</div><div class="compliance-desc">Security testing is incorporated throughout development and will continue to mature as the product progresses.</div></div>
-      <div class="compliance reveal"><div class="compliance-status wip">Designed for</div><div class="compliance-title">Secure data handling</div><div class="compliance-region">Transport &amp; storage</div><div class="compliance-desc">Security controls are being designed to protect data in transit and at rest, with implementation validated as the platform develops.</div></div>
+      <div class="compliance reveal"><div class="compliance-title">Your consent</div><div class="compliance-desc">Students and sponsors each authorise their own bank connection. Banking credentials never reach Verio.</div></div>
+      <div class="compliance reveal"><div class="compliance-title">Protected information</div><div class="compliance-desc">Information is encrypted in transit and at rest, including backups.</div></div>
+      <div class="compliance reveal"><div class="compliance-title">Controlled access</div><div class="compliance-desc">University records are kept separate. Financial figures require review permission, and staff use a second factor.</div></div>
+      <div class="compliance reveal"><div class="compliance-title">Clear audit records</div><div class="compliance-desc">Verification actions are recorded, including staff access to balances and uploaded documents.</div></div>
     </div>
+    <p class="trust-details"><a href="https://secure.verio.global/security">Explore security and data protection →</a><a href="https://secure.verio.global/security/india">India-specific arrangements →</a><span>The India-specific additions are proposed, subject to RBI approval and not operating today.</span></p>
   </div>
 </section>
 <section class="stripe" id="about">
   <div class="container">
     <div class="reveal" style="max-width:760px;">
       <div class="section-eyebrow">About Verio</div>
-      <h2 class="section-heading">Building trust into international student admissions.</h2>
-      <p class="section-lead">Verio helps education providers assess student and sponsor financial capacity through secure, consent-driven verification, supporting more confident admissions decisions across international markets.</p>
+      <h2 class="section-heading">Building the global standard for consent-based financial verification</h2>
+      <p class="section-lead">Verio brings a consistent approach to financial verification across international student admissions. With each person’s consent, we assess student and sponsor financial capacity against the university’s requirements and present the outcome in a clear verification certificate. Our ambition is to make financial evidence easier to verify across borders, giving universities confidence in every decision.</p>
     </div>
   </div>
 </section>
@@ -1115,7 +1130,7 @@
   <div class="container">
     <div class="cta-inner">
       <h2 class="cta-heading">Ready to strengthen your financial verification?</h2>
-      <p class="cta-sub">Discover how Verio can support your institution’s financial verification process for international student admissions.</p>
+      <p class="cta-sub">See how Verio fits your university’s international admissions workflow.</p>
       <div class="cta-btns">
         <a href="mailto:contact@verio.global?subject=Verio%20demo%20request" class="cta-btn-primary">Request a Demo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
       </div>
@@ -1128,7 +1143,7 @@
     <div class="footer-grid">
       <div>
         <div class="nav-logo" style="color: var(--deep-ink);">verio</div>
-        <div class="footer-brand-desc">Trusted financial verification. Confident decisions.</div>
+        <div class="footer-brand-desc">Direct from the bank. Confidence in every decision.</div>
       </div>
       <div class="footer-col">
         <div class="footer-col-title">Explore</div>
