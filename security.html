@@ -301,7 +301,7 @@
           <a href="#trust">Built for Trust</a>
           <a href="#privacy">Privacy by Design</a>
           <a href="#security">Security by Design</a>
-          <a href="#control">Applicant Control</a>
+          <a href="#control">Student and Sponsor Control</a>
           <a href="#compliance">Compliance</a>
           <a href="#technology">Responsible Technology</a>
           <a href="#improvement">Continuous Improvement</a>
@@ -311,77 +311,28 @@
 
       <article class="content">
         <section id="trust">
-          <h2>Built for Trust</h2>
-          <p>Trust is at the heart of everything we do.</p>
-          <p>Verio helps education providers verify an applicant’s financial capacity using consent-based, bank-verified financial data. Our platform is designed to reduce fraud, improve consistency and provide institutions with greater confidence in every verification outcome.</p>
-          <p>Security, privacy and responsible data handling are fundamental to how we build our platform and work with our partners.</p>
-        </section>
+          <h2>Built for Trust</h2><p>Verio checks an applicant’s financial capacity on a university’s instructions using bank information authorised by each account holder. Where the university permits documents, a university reviewer assesses them and the result is labelled “University reviewed, not bank verified”.</p><p>The <a href="https://secure.verio.global/security">Security and Data Protection page</a> is the detailed reference for implemented controls, regional arrangements and assurance. This page summarises that reference.</p></section>
 
         <section id="privacy">
-          <h2>Privacy by Design</h2>
-          <p>Verio is built on privacy-first principles that put applicants in control of their information.</p>
-          <p>We are committed to:</p>
-          <ul>
-            <li>Obtaining explicit consent before any financial information is accessed.</li>
-            <li>Collecting only the information necessary to complete a verification.</li>
-            <li>Using data solely for the authorised verification purpose.</li>
-            <li>Maintaining clear audit trails throughout the verification process.</li>
-            <li>Restricting access to authorised personnel through role-based permissions.</li>
-          </ul>
-        </section>
+          <h2>Privacy by Design</h2><p>Each student and sponsor gives their own consent before a bank connection begins. Verio records the exact wording, time and verified email address. Financial information is used only for the requested verification.</p><p>Bank connections supply balances and their changes, bank and masked account details, and an account-name match. Banking credentials never pass through Verio, and individual transactions from bank connections are not retained. Uploaded statements remain visible as uploaded to authorised university reviewers.</p><p>No participant is shown another participant’s figures or documents. The <a href="/privacy.html">Privacy Policy</a> explains roles, access, sharing and rights.</p></section>
 
         <section id="security">
-          <h2>Security by Design</h2>
-          <p>Protecting sensitive financial information is central to our platform.</p>
-          <p>Our security approach includes:</p>
-          <ul>
-            <li>Encryption of data in transit and at rest.</li>
-            <li>Secure authentication and access controls.</li>
-            <li>Comprehensive activity logging and monitoring.</li>
-            <li>Secure cloud infrastructure following recognised industry best practices.</li>
-            <li>Ongoing security reviews as our platform continues to evolve.</li>
-          </ul>
-          <p>Security is embedded into the design of Verio and will continue to develop as we expand internationally.</p>
-        </section>
+          <h2>Security by Design</h2><p>Implemented platform controls include:</p><ul><li>TLS 1.2 or higher in transit and AES-256 encryption at rest, including backups.</li><li>Database-enforced university isolation and specific permissions for reviewing financial figures.</li><li>Email verification and TOTP for staff, with a fresh second factor for sensitive actions.</li><li>An append-only audit trail, including staff reads of balances and documents.</li><li>Malware scanning and re-encoding of uploaded documents before opening.</li><li>Continuous monitoring, incident response, daily backups and automated security checks on changes.</li></ul><p>The <a href="https://secure.verio.global/security">detailed security page</a> sets out these controls, review arrangements and regional processing.</p></section>
 
         <section id="control">
-          <h2>Applicant Control</h2>
-          <p>Applicants remain in control of their financial information throughout the verification process.</p>
-          <p>Where supported by local financial infrastructure and regulatory frameworks:</p>
-          <ul>
-            <li>Financial data is accessed only after explicit consent.</li>
-            <li>Information is retrieved directly from authorised financial institutions or regulated data-sharing networks.</li>
-            <li>Education providers receive only the verification outcome and information required to support their assessment, rather than unnecessary underlying financial data.</li>
-          </ul>
-        </section>
+          <h2>Student and Sponsor Control</h2><p>Every participant authorises their own bank connection; anyone helping to pay makes their own declaration. A sponsor or guardian can withdraw their declaration and an applicant can end a verification. Either stops further reading and ends Verio’s access at the provider without changing information already supplied to the university.</p><p>Privacy requests and grievances go to <a href="mailto:privacy@verio.global">privacy@verio.global</a> and receive an answer within 30 days. Where Verio holds data for a university, the university decides the request as controller and Verio acts on its instructions.</p><p>For an applicant under 18, their own accounts and documents are not read until a parent or guardian has agreed using a verified email address. The university cannot disable this protection.</p></section>
 
         <section id="compliance">
-          <h2>Compliance</h2>
-          <p>Verio is designed to support applicable privacy, financial data and regulatory requirements in each market where we operate.</p>
-          <p>As we expand internationally, we will continue to strengthen our governance, security and compliance framework in partnership with regulated financial data providers and trusted technology partners.</p>
-        </section>
+          <h2>Compliance</h2><p>Verio Global Pte. Ltd. operates under Singapore’s PDPA and processes financial and application data under each university’s instructions and data processing agreement. Verio is controller for participant sign-in details. India’s DPDP Act applies for Indian participants.</p><p>Financial data is processed in Ireland unless the source market requires processing in-market. The India-specific arrangement is proposed, subject to RBI approval and not operating today. It would process and store Indian financial information and backups in Mumbai, retain bank balances and account identifiers in India, and send the assessment outside India. University reviewers would see the assessment and could open uploaded documents, but not bank-connection balances. The proposed bank connection would use an RBI-licensed Account Aggregator through the licensed provider, with a separate consent artefact specifying purpose, data period and validity. See the <a href="https://secure.verio.global/security/india">India-specific arrangements</a>.</p><p>University retention is 90 days by default, with 180-day or one-year options and dispute holds. Longer-lived outcomes, certificate records and audit trails have separate rules. The <a href="/privacy.html">Privacy Policy</a> sets out deletion stages, seven-day backup removal and contract-end export.</p></section>
 
         <section id="technology">
-          <h2>Responsible Technology</h2>
-          <p>Technology should improve trust, not replace it.</p>
-          <p>Where automation supports the verification process, it is designed to improve efficiency, consistency and accuracy while maintaining transparency and appropriate human oversight where required.</p>
-        </section>
+          <h2>Responsible Technology</h2><p>Verio applies the university’s rules and records the rule version. Cases the rules cannot settle, including documents-only cases, are held for a university reviewer. Admission decisions are made by a person at the university.</p></section>
 
         <section id="improvement">
-          <h2>Continuous Improvement</h2>
-          <p>Security and privacy are ongoing commitments.</p>
-          <p>We continually review our platform, policies and operational controls to strengthen protection, respond to emerging risks and meet the evolving expectations of education providers, applicants and regulatory partners.</p>
-        </section>
+          <h2>Continuous Improvement</h2><p>The detailed security page is reviewed at least quarterly and whenever a control changes. Code-enforced controls are checked on every change.</p><p>Verio commissions an independent penetration test before universities are onboarded at scale and annually thereafter. Infrastructure providers publish their own certifications, which do not certify Verio. Verio will scope ISO 27001 or SOC 2 certification where required by a customer or regulator.</p></section>
 
         <section id="contact">
-          <h2>Contact Us</h2>
-          <p>If you have questions about our security, privacy or compliance approach, we’d be pleased to discuss your requirements.</p>
-          <div class="contact-card">
-            <strong>Verio</strong>
-            <p>Email: <a href="mailto:contact@verio.global">contact@verio.global</a></p>
-            <p>Website: <a href="https://www.verio.global/">www.verio.global</a></p>
-          </div>
-        </section>
+          <h2>Contact Us</h2><p>Contact <a href="mailto:privacy@verio.global">privacy@verio.global</a> for the Data Protection Officer, privacy rights and grievances; an answer is provided within 30 days.</p><p>Contact <a href="mailto:security@verio.global">security@verio.global</a> for security questions, vendor assessments and vulnerability reports; these are acknowledged within two business days.</p><p>General enquiries: <a href="mailto:contact@verio.global">contact@verio.global</a>.</p></section>
       </article>
     </div>
   </main>
